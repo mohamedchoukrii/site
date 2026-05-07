@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrollDeath – Advanced Performance Tools Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner">
+    <span>We use cookies to provide you with the best experience.</span>
+    <button onclick="dismissCookie()">Dismiss</button>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <img src="https://g.top4top.io/p_3779uot4u1.jpg" alt="Troll Death" class="logo-image">
+        <span class="logo-text">Troll<span class="logo-accent">Death</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#products" class="nav-btn-primary">Shop Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#products" onclick="toggleMenu()">Products</a>
+      <a href="#why" onclick="toggleMenu()">Why Us</a>
+      <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+      <a href="#faq" onclick="toggleMenu()">FAQ</a>
+      <a href="#" class="mobile-btn">Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- LOADING SCREEN -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- PAGE TRANSITION -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-glow glow-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <a href="#" class="hero-badge">
+        <span class="badge-dot"></span>
+        We only offer high quality tools.
+      </a>
+      <h1 class="hero-title">
+        Defeat is not a possibility<br />
+        <span class="hero-accent">with TrollDeath</span>
+      </h1>
+      <p class="hero-sub">
+        TrollDeath is a versatile software designed to optimize performance and improve efficiency across different systems, helping users get smoother and more reliable results.
+      </p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">Shop Now</a>
+        <a href="#discord" class="btn-ghost">Join Community</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10K+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">99.9%</span>
+          <span class="stat-label">Uptime</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-cards-float">
+        <div class="hcard">
+          <div class="hcard-status">UNDETECTED</div>
+          <div class="hcard-icon">�</div>
+          <div class="hcard-name">TrollMacker</div>
+          <div class="hcard-price">From $1</div>
+        </div>
+        <div class="hcard hcard-2">
+          <div class="hcard-status">ONLINE</div>
+          <div class="hcard-icon">🛡️</div>
+          <div class="hcard-name">NoRCE Security</div>
+          <div class="hcard-price">From $3</div>
+        </div>
+        <div class="hcard hcard-3">
+          <div class="hcard-status">IN STOCK</div>
+          <div class="hcard-icon">⚡</div>
+          <div class="hcard-name">MBE</div>
+          <div class="hcard-price">From $1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRENDING PRODUCTS -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-label">Best Sellers</div>
+      <h2 class="section-title">Trending Products</h2>
+      <p class="section-sub">Our best-selling tools trusted by thousands</p>
+      <div class="products-grid">
+
+        <div class="product-card product-featured" data-aos>
+          <div class="product-top">
+            <span class="product-badge popular">Popular</span>
+            <span class="product-status">● IN STOCK</span>
+          </div>
+          <div class="product-image">
+            <img src="https://a.top4top.io/p_37196qmnm1.jpg" alt="TrollMacker" loading="lazy">
+          </div>
+          <h3 class="product-name">TrollMacker</h3>
+          <div class="product-tag">UNDETECTED</div>
+          <p class="product-desc">Convert your payload to a short CMD code that can be run and access many features within the code
+.</p>
+          <div class="product-pricing">
+            <div class="price-option">
+              <span class="price-period">Day</span>
+              <span class="price-amount">$1</span>
+            </div>
+            <div class="price-option">
+              <span class="price-period">Week</span>
+              <span class="price-amount">$3</span>
+            </div>
+            <div class="price-option">
+              <span class="price-period">Month</span>
+              <span class="price-amount">$6</span>
+            </div>
+            <div class="price-option featured">
+              <span class="price-period">Lifetime</span>
+              <span class="price-amount">$10</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary btn-sm">Buy Now</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-top">
+            <span class="product-badge new">New</span>
+            <span class="product-status">● ONLINE</span>
+          </div>
+          <div class="product-image">
+            <img src="https://f.top4top.io/p_3719p31vl1.jpg" alt="NoRCE Security Guard" loading="lazy">
+          </div>
+          <h3 class="product-name">NoRCE Security Guard</h3>
+          <div class="product-tag">UNDETECTED</div>
+          <p class="product-desc">A security tool designed to monitor and block suspicious operations that may be used in remote code execution attacks.</p>
+          <div class="product-pricing">
+            <div class="price-option">
+              <span class="price-period">Day</span>
+              <span class="price-amount">$3</span>
+            </div>
+            <div class="price-option">
+              <span class="price-period">Week</span>
+              <span class="price-amount">$6</span>
+            </div>
+            <div class="price-option">
+              <span class="price-period">Month</span>
+              <span class="price-amount">$10</span>
+            </div>
+            <div class="price-option featured">
+              <span class="price-period">Lifetime</span>
+              <span class="price-amount">$15</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary btn-sm">Buy Now</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-top">
+            <span class="product-badge popular">Popular</span>
+            <span class="product-status">● IN STOCK</span>
+          </div>
+          <div class="product-image">
+            <img src="https://a.top4top.io/p_3779k21bp1.png" alt="MBE" loading="lazy">
+          </div>
+          <h3 class="product-name">LYNX1 RCE</h3>
+          <div class="product-tag">UNDETECTED</div>
+          <p class="product-desc">More info in discord.</p>
+          <div class="product-pricing">
+            <div class="price-option">
+              <span class="price-period">Day</span>
+              <span class="price-amount">$1</span>
+            </div>
+            <div class="price-option">
+              <span class="price-period">Week</span>
+              <span class="price-amount">$3</span>
+            </div>
+            <div class="price-option">
+              <span class="price-period">Month</span>
+              <span class="price-amount">$6</span>
+            </div>
+            <div class="price-option featured">
+              <span class="price-period">Lifetime</span>
+              <span class="price-amount">$10</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary btn-sm">Buy Now</a>
+        </div>
+
+      </div>
+      <div class="section-cta">
+        <a href="#" class="btn-ghost">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section" id="why">
+    <div class="container">
+      <h2 class="section-title">Why Choose TrollDeath?</h2>
+      <p class="section-sub">Discover premium digital solutions. Unlock powerful tools and resources with total security and reliability.</p>
+      <div class="why-layout">
+        <div class="why-featured" data-aos>
+          <div class="why-feat-glow"></div>
+          <div class="why-feat-badge">Best Seller</div>
+          <div class="why-feat-icon">🛡️</div>
+          <h3>NoRCE Security Guard</h3>
+          <ul class="why-feat-features">
+            <li>✓ Real‑time Process Monitoring</li>
+            <li>✓ Malicious PowerShell Detection</li>
+            <li>✓ Suspicious Command Blocking</li>
+            <li>✓ Automatic Process Termination</li>
+          </ul>
+          <a href="#" class="btn-primary btn-sm">View Product</a>
+        </div>
+        <div class="why-cards">
+          <div class="why-card" data-aos>
+            <div class="why-card-icon">🏆</div>
+            <h4>Trusted Service</h4>
+            <p>Thousands of satisfied customers rely on our premium digital solutions every day.</p>
+          </div>
+          <div class="why-card" data-aos>
+            <div class="why-card-icon">⚡</div>
+            <h4>Instant Delivery</h4>
+            <p>Automated keys sent immediately after purchase. No waiting, no delays.</p>
+          </div>
+          <div class="why-card" data-aos>
+            <div class="why-card-icon">🔒</div>
+            <h4>Secure Payments</h4>
+            <p>We support Crypto, Cards, PayPal, and more.</p>
+            <div class="payment-pills">
+              <span>VISA</span><span>PayPal</span><span>Crypto</span>
+            </div>
+          </div>
+          <div class="why-card" data-aos>
+            <div class="why-card-icon">🛡️</div>
+            <h4>Always The best</h4>
+            <p>Our tools are regularly updated to ensure optimal performance, stability, and compatibility with the latest system updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <h2 class="section-title">What Our Users Say</h2>
+      <p class="section-sub">Join thousands of satisfied customers</p>
+      <div class="reviews-outer">
+        <!-- Row 1 – scrolls left -->
+        <div class="reviews-row">
+          <div class="reviews-track" id="track1">
+            <div class="rv-card"><div class="rv-av">A</div><div class="rv-info"><div class="rv-top"><strong>Alex M.</strong><span>2d ago</span></div><div class="rv-stars">★★★★★</div><p>"Fast delivery, exactly as described!"</p></div></div>
+            <div class="rv-card"><div class="rv-av">S</div><div class="rv-info"><div class="rv-top"><strong>Sarah K.</strong><span>1w ago</span></div><div class="rv-stars">★★★★★</div><p>"Legit, works perfectly every time."</p></div></div>
+            <div class="rv-card"><div class="rv-av">J</div><div class="rv-info"><div class="rv-top"><strong>John D.</strong><span>3d ago</span></div><div class="rv-stars">★★★★☆</div><p>"Good product, delivery was quick."</p></div></div>
+            <div class="rv-card"><div class="rv-av">M</div><div class="rv-info"><div class="rv-top"><strong>Mike R.</strong><span>1d ago</span></div><div class="rv-stars">★★★★★</div><p>"Perfect, will buy again for sure."</p></div></div>
+            <div class="rv-card"><div class="rv-av">E</div><div class="rv-info"><div class="rv-top"><strong>Emily W.</strong><span>5h ago</span></div><div class="rv-stars">★★★★★</div><p>"Received my key in minutes!"</p></div></div>
+            <div class="rv-card"><div class="rv-av">D</div><div class="rv-info"><div class="rv-top"><strong>David B.</strong><span>Just now</span></div><div class="rv-stars">★★★★★</div><p>"W shop, best out there."</p></div></div>
+            <div class="rv-card"><div class="rv-av">C</div><div class="rv-info"><div class="rv-top"><strong>Chris P.</strong><span>4d ago</span></div><div class="rv-stars">★★★★★</div><p>"Great prices, super quick delivery."</p></div></div>
+            <div class="rv-card"><div class="rv-av">J</div><div class="rv-info"><div class="rv-top"><strong>Jessica L.</strong><span>2w ago</span></div><div class="rv-stars">★★★★★</div><p>"Already my 3rd order, never had an issue."</p></div></div>
+            <!-- duplicate for seamless loop -->
+            <div class="rv-card"><div class="rv-av">A</div><div class="rv-info"><div class="rv-top"><strong>Alex M.</strong><span>2d ago</span></div><div class="rv-stars">★★★★★</div><p>"Fast delivery, exactly as described!"</p></div></div>
+            <div class="rv-card"><div class="rv-av">S</div><div class="rv-info"><div class="rv-top"><strong>Sarah K.</strong><span>1w ago</span></div><div class="rv-stars">★★★★★</div><p>"Legit, works perfectly every time."</p></div></div>
+            <div class="rv-card"><div class="rv-av">J</div><div class="rv-info"><div class="rv-top"><strong>John D.</strong><span>3d ago</span></div><div class="rv-stars">★★★★☆</div><p>"Good product, delivery was quick."</p></div></div>
+            <div class="rv-card"><div class="rv-av">M</div><div class="rv-info"><div class="rv-top"><strong>Mike R.</strong><span>1d ago</span></div><div class="rv-stars">★★★★★</div><p>"Perfect, will buy again for sure."</p></div></div>
+          </div>
+        </div>
+        <!-- Row 2 – scrolls right -->
+        <div class="reviews-row">
+          <div class="reviews-track reviews-track-rev" id="track2">
+            <div class="rv-card"><div class="rv-av">R</div><div class="rv-info"><div class="rv-top"><strong>Ryan T.</strong><span>1d ago</span></div><div class="rv-stars">★★★★☆</div><p>"Good overall, solid product."</p></div></div>
+            <div class="rv-card"><div class="rv-av">K</div><div class="rv-info"><div class="rv-top"><strong>Kevin H.</strong><span>3h ago</span></div><div class="rv-stars">★★★★★</div><p>"Instant delivery, no issues at all."</p></div></div>
+            <div class="rv-card"><div class="rv-av">L</div><div class="rv-info"><div class="rv-top"><strong>Lisa M.</strong><span>5d ago</span></div><div class="rv-stars">★★★★★</div><p>"Smooth and reliable, 10/10."</p></div></div>
+            <div class="rv-card"><div class="rv-av">T</div><div class="rv-info"><div class="rv-top"><strong>Tom B.</strong><span>1w ago</span></div><div class="rv-stars">★★★★★</div><p>"My go-to shop, always reliable."</p></div></div>
+            <div class="rv-card"><div class="rv-av">N</div><div class="rv-info"><div class="rv-top"><strong>Nina S.</strong><span>2d ago</span></div><div class="rv-stars">★★★★★</div><p>"Undetected for months, amazing work."</p></div></div>
+            <div class="rv-card"><div class="rv-av">P</div><div class="rv-info"><div class="rv-top"><strong>Paul G.</strong><span>6h ago</span></div><div class="rv-stars">★★★★★</div><p>"Best spoofer I've ever used."</p></div></div>
+            <div class="rv-card"><div class="rv-av">O</div><div class="rv-info"><div class="rv-top"><strong>Oliver K.</strong><span>3d ago</span></div><div class="rv-stars">★★★★★</div><p>"Support team is absolutely top notch."</p></div></div>
+            <div class="rv-card"><div class="rv-av">Z</div><div class="rv-info"><div class="rv-top"><strong>Zara M.</strong><span>1w ago</span></div><div class="rv-stars">★★★★★</div><p>"Would recommend to everyone I know."</p></div></div>
+            <!-- duplicate -->
+            <div class="rv-card"><div class="rv-av">R</div><div class="rv-info"><div class="rv-top"><strong>Ryan T.</strong><span>1d ago</span></div><div class="rv-stars">★★★★☆</div><p>"Good overall, solid product."</p></div></div>
+            <div class="rv-card"><div class="rv-av">K</div><div class="rv-info"><div class="rv-top"><strong>Kevin H.</strong><span>3h ago</span></div><div class="rv-stars">★★★★★</div><p>"Instant delivery, no issues at all."</p></div></div>
+            <div class="rv-card"><div class="rv-av">L</div><div class="rv-info"><div class="rv-top"><strong>Lisa M.</strong><span>5d ago</span></div><div class="rv-stars">★★★★★</div><p>"Smooth and reliable, 10/10."</p></div></div>
+            <div class="rv-card"><div class="rv-av">T</div><div class="rv-info"><div class="rv-top"><strong>Tom B.</strong><span>1w ago</span></div><div class="rv-stars">★★★★★</div><p>"My go-to shop, always reliable."</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container container-sm">
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-sub">Common questions about our service</p>
+      <div class="faq-list">
+        <div class="faq-item" data-aos>
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How fast is delivery?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Delivery is fully automated. After your payment is confirmed, your license key is sent instantly to your email — usually within seconds.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos>
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What operating systems are supported?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Most of our tools support Windows 10 and Windows 11 (64-bit). Specific system requirements are listed on each product page.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos>
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What happens if a product gets detected or goes offline?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>If a product goes offline or gets detected, we pause it immediately and work on an update. Your subscription time is paused during downtime and resumed once the product is back online.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos>
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How can I access professional support?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>You can reach our support team 24/7 via our Discord server or through the dashboard support ticket system. We typically respond within minutes.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos>
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is my payment information safe?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes. All payments are processed through secure, encrypted payment gateways. We never store your card details on our servers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCORD CTA -->
+  <section class="section discord-section" id="discord">
+    <div class="container">
+      <div class="discord-box" data-aos>
+        <div class="discord-glow"></div>
+        <div class="discord-emoji">💬</div>
+        <h2>Join Our Discord</h2>
+        <p>Stay up to date with all the latest news, updates, and exciting giveaways. Get instant support from our team.</p>
+        <a href="https://discord.gg/tenASXNq78" class="btn-primary btn-lg" target="_blank">Join Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="https://g.top4top.io/p_3779uot4u1.jpg" alt="Lynx Tool" class="logo-image">
+            <span class="logo-text">Lynx<span class="logo-accent">Tool</span></span>
+          </a>
+          <p>Offering a diverse range of tools across popular applications, TrollDeath is designed to enhance performance, improve stability, and deliver a smoother user experience. If you're looking for reliable optimization, you're in the right place.</p>
+          <div class="footer-socials">
+            <a href="https://www.youtube.com/@Troll_death" class="social-link" aria-label="YouTube" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://guns.lol/lynx1" class="social-link" aria-label="Guns.lol" target="_blank">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+            <a href="https://www.instagram.com/prv.lynx1" class="social-link" aria-label="Instagram" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+                <div class="footer-col">
+          <h5>SUPPORT</h5>
+          <a href="#">Help Center</a>
+          <a href="#">Status Page</a>
+          <a href="#">Discord</a>
+        </div>
+        <div class="footer-col">
+          <h5>LEGAL</h5>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+        <div class="footer-col">
+          <h5>ABOUT</h5>
+          <div class="footer-status">
+            <span class="status-dot"></span> All Systems Operational
+          </div>
+          <div class="footer-status">
+            <span class="status-dot"></span> Dev By Lynx1
+          </div>
+        </div>
+              </div>
+      <div class="footer-bottom">
+        <span>© 2026 TrollDeath. All rights reserved.</span>
+        <div class="footer-pay">
+          <span>🔒 SSL</span>
+          <span>VISA</span>
+          <span>MC</span>
+          <span>PayPal</span>
+          <span>Crypto</span>
+          <span>Apple Pay</span>
+          <span>Google Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<!-- ADVANCED PAYMENT MODAL -->
+  <div class="payment-modal" id="paymentModal">
+    <div class="modal-backdrop" onclick="closePaymentModal()"></div>
+    <div class="modal-content advanced-modal">
+      <div class="modal-header">
+        <div class="modal-header-content">
+          <div class="modal-icon">💳</div>
+          <div>
+            <h3>Secure Checkout</h3>
+            <p>Complete your purchase safely and instantly</p>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closePaymentModal()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Progress Steps -->
+        <div class="payment-progress">
+          <div class="progress-step active" id="step1">
+            <span class="step-number">1</span>
+            <span class="step-label">Order</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="step2">
+            <span class="step-number">2</span>
+            <span class="step-label">Payment</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="step3">
+            <span class="step-number">3</span>
+            <span class="step-label">Complete</span>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary advanced-summary">
+          <h4>Order Summary</h4>
+          <div class="order-items">
+            <div class="order-item advanced-item">
+              <div class="item-info">
+                <div class="item-icon" id="modalProductIcon">🔥</div>
+                <div>
+                  <span class="order-product" id="modalProductName">Product Name</span>
+                  <span class="order-period" id="modalProductPeriod">Duration</span>
+                </div>
+              </div>
+              <span class="order-price" id="modalProductPrice">$0</span>
+            </div>
+            
+            <div class="order-benefits">
+              <div class="benefit">
+                <i class="fas fa-check-circle"></i>
+                <span>Instant Delivery</span>
+              </div>
+              <div class="benefit">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure Payment</span>
+              </div>
+              <div class="benefit">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Support</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="order-total">
+            <div class="total-row">
+              <span>Subtotal</span>
+              <span id="subtotal">$0</span>
+            </div>
+            <div class="total-row">
+              <span>Processing Fee</span>
+              <span id="fee">$0</span>
+            </div>
+            <div class="total-row main-total">
+              <span>Total</span>
+              <span id="total">$0</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Payment Methods -->
+        <div class="payment-methods advanced-methods">
+          <h4>Select Payment Method</h4>
+          <div class="payment-grid advanced-grid">
+            <div class="payment-option advanced-option disabled" onclick="showDiscordMessage()">
+              <div class="payment-header">
+                <div class="payment-icon paypal-icon">
+                  <i class="fab fa-paypal"></i>
+                </div>
+                <div class="payment-badge disabled">Coming Soon</div>
+              </div>
+              <div class="payment-info">
+                <strong>PayPal</strong>
+                <span>Currently unavailable</span>
+                <div class="payment-features">
+                  <span><i class="fas fa-lock"></i> Disabled</span>
+                  <span><i class="fas fa-clock"></i> Maintenance</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="payment-option advanced-option disabled" onclick="showDiscordMessage()">
+              <div class="payment-header">
+                <div class="payment-icon card-icon">
+                  <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="payment-badge disabled">Coming Soon</div>
+              </div>
+              <div class="payment-info">
+                <strong>Credit/Debit Card</strong>
+                <span>Currently unavailable</span>
+                <div class="payment-features">
+                  <span><i class="fas fa-lock"></i> Disabled</span>
+                  <span><i class="fas fa-clock"></i> Maintenance</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="payment-option advanced-option disabled" onclick="showDiscordMessage()">
+              <div class="payment-header">
+                <div class="payment-icon paysafe-icon">
+                  <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="payment-badge disabled">Coming Soon</div>
+              </div>
+              <div class="payment-info">
+                <strong>Paysafecard</strong>
+                <span>Currently unavailable</span>
+                <div class="payment-features">
+                  <span><i class="fas fa-lock"></i> Disabled</span>
+                  <span><i class="fas fa-clock"></i> Maintenance</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="payment-option advanced-option disabled" onclick="showDiscordMessage()">
+              <div class="payment-header">
+                <div class="payment-icon crypto-icon">
+                  <i class="fab fa-bitcoin"></i>
+                </div>
+                <div class="payment-badge disabled">Coming Soon</div>
+              </div>
+              <div class="payment-info">
+                <strong>Cryptocurrency</strong>
+                <span>Currently unavailable</span>
+                <div class="payment-features">
+                  <span><i class="fas fa-lock"></i> Disabled</span>
+                  <span><i class="fas fa-clock"></i> Maintenance</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="payment-option advanced-option" onclick="openDiscordPayment()">
+              <div class="payment-header">
+                <div class="payment-icon discord-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="payment-badge available">Available Now</div>
+              </div>
+              <div class="payment-info">
+                <strong>Discord Methods</strong>
+                <span>Join our Discord for purchases</span>
+                <div class="payment-features">
+                  <span><i class="fas fa-gift"></i> Special Offers</span>
+                  <span><i class="fas fa-users"></i> Community</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Payment Forms -->
+        <div class="payment-forms" id="paymentForms">
+          <!-- PayPal Form -->
+          <div class="form-section advanced-form" id="paypalForm" style="display: none;">
+            <div class="form-header">
+              <div class="form-icon">
+                <i class="fab fa-paypal"></i>
+              </div>
+              <div>
+                <h5>PayPal Payment</h5>
+                <p>You will be redirected to PayPal's secure checkout</p>
+              </div>
+            </div>
+            <form action="#" method="POST" id="paypalPaymentForm">
+              <div class="form-group">
+                <label>PayPal Email Address</label>
+                <input type="email" placeholder="your@email.com" class="form-input advanced-input" name="email" required>
+                <span class="input-icon"><i class="fas fa-envelope"></i></span>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="savePaypal" name="savePaypal">
+                <label for="savePaypal">Save PayPal for future purchases</label>
+              </div>
+              <button type="submit" class="btn-primary btn-full advanced-btn">
+                <i class="fas fa-lock"></i>
+                Proceed to PayPal
+              </button>
+            </form>
+          </div>
+
+          <!-- Card Form -->
+          <div class="form-section advanced-form" id="cardForm" style="display: none;">
+            <div class="form-header">
+              <div class="form-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <div>
+                <h5>Card Payment</h5>
+                <p>Your card information is encrypted and secure</p>
+              </div>
+            </div>
+            <form action="#" method="POST" id="cardPaymentForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Card Number</label>
+                  <input type="text" placeholder="1234 5678 9012 3456" class="form-input advanced-input" name="cardNumber" maxlength="19" required>
+                  <span class="input-icon"><i class="fas fa-credit-card"></i></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group half">
+                  <label>Expiry Date</label>
+                  <input type="text" placeholder="MM/YY" class="form-input advanced-input" name="expiry" maxlength="5" required>
+                  <span class="input-icon"><i class="fas fa-calendar"></i></span>
+                </div>
+                <div class="form-group half">
+                  <label>CVV</label>
+                  <input type="text" placeholder="123" class="form-input advanced-input" name="cvv" maxlength="4" required>
+                  <span class="input-icon"><i class="fas fa-lock"></i></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Cardholder Name</label>
+                <input type="text" placeholder="John Doe" class="form-input advanced-input" name="cardholder" required>
+                <span class="input-icon"><i class="fas fa-user"></i></span>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="saveCard" name="saveCard">
+                <label for="saveCard">Save card for future purchases</label>
+              </div>
+              <button type="submit" class="btn-primary btn-full advanced-btn">
+                <i class="fas fa-lock"></i>
+                Complete Payment
+              </button>
+            </form>
+          </div>
+
+          <!-- Paysafecard Form -->
+          <div class="form-section advanced-form" id="paysafeForm" style="display: none;">
+            <div class="form-header">
+              <div class="form-icon">
+                <i class="fas fa-ticket-alt"></i>
+              </div>
+              <div>
+                <h5>Paysafecard Payment</h5>
+                <p>Enter your 16-digit PIN code from your voucher</p>
+              </div>
+            </div>
+            <form action="#" method="POST" id="paysafePaymentForm">
+              <div class="form-group">
+                <label>Paysafecard PIN</label>
+                <input type="text" placeholder="Enter 16-digit PIN" class="form-input advanced-input" name="paysafePin" maxlength="16" required>
+                <span class="input-icon"><i class="fas fa-ticket-alt"></i></span>
+              </div>
+              <div class="form-group">
+                <label>Confirm PIN</label>
+                <input type="text" placeholder="Confirm 16-digit PIN" class="form-input advanced-input" name="paysafePinConfirm" maxlength="16" required>
+                <span class="input-icon"><i class="fas fa-lock"></i></span>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="savePaysafe" name="savePaysafe">
+                <label for="savePaysafe">Save Paysafecard for future purchases</label>
+              </div>
+              <button type="submit" class="btn-primary btn-full advanced-btn">
+                <i class="fas fa-lock"></i>
+                Pay with Paysafecard
+              </button>
+            </form>
+          </div>
+
+          <!-- Crypto Form -->
+          <div class="form-section advanced-form" id="cryptoForm" style="display: none;">
+            <div class="form-header">
+              <div class="form-icon">
+                <i class="fab fa-bitcoin"></i>
+              </div>
+              <div>
+                <h5>Cryptocurrency Payment</h5>
+                <p>Send crypto to the address below</p>
+              </div>
+            </div>
+            <div class="crypto-options">
+              <div class="crypto-tab active" onclick="selectCrypto('btc')">Bitcoin</div>
+              <div class="crypto-tab" onclick="selectCrypto('eth')">Ethereum</div>
+              <div class="crypto-tab" onclick="selectCrypto('usdt')">USDT</div>
+            </div>
+            <div class="crypto-address" id="cryptoAddress">
+              <div class="address-qr">
+                <canvas id="qrCode"></canvas>
+              </div>
+              <div class="address-info">
+                <label>Send to this address</label>
+                <div class="address-text">
+                  <input type="text" value="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" readonly class="form-input advanced-input">
+                  <button class="copy-btn" onclick="copyAddress()">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+                <div class="crypto-amount">
+                  <span>Amount to send: </span>
+                  <strong id="cryptoAmount">0.0005 BTC</strong>
+                </div>
+              </div>
+            </div>
+            <div class="payment-status">
+              <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>Waiting for payment...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
